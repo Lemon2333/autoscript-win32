@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\value.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\value.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\lexer.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\lexer.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\ast.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\ast.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\env.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\env.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\plugin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\plugin.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\builtins.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\builtins.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\parser.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\parser.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\interpreter.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\interpreter.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B279633D-B7EA-4821-AA47-D819515F3963}|autoscript0.vcxproj|solutionrelative:src\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "value.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\value.c",
+              "RelativeDocumentMoniker": "src\\value.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\value.c",
+              "RelativeToolTip": "src\\value.c",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:26:49.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "lexer.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\lexer.c",
+              "RelativeDocumentMoniker": "src\\lexer.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\lexer.c",
+              "RelativeToolTip": "src\\lexer.c",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:26:43.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ast.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\ast.c",
+              "RelativeDocumentMoniker": "src\\ast.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\ast.c",
+              "RelativeToolTip": "src\\ast.c",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:26:22.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "env.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\env.c",
+              "RelativeDocumentMoniker": "src\\env.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\env.c",
+              "RelativeToolTip": "src\\env.c",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:25:50.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "plugin.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\plugin.c",
+              "RelativeDocumentMoniker": "src\\plugin.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\plugin.c",
+              "RelativeToolTip": "src\\plugin.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:25:37.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "builtins.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\builtins.c",
+              "RelativeDocumentMoniker": "src\\builtins.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\builtins.c",
+              "RelativeToolTip": "src\\builtins.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:25:24.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "parser.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\parser.c",
+              "RelativeDocumentMoniker": "src\\parser.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\parser.c",
+              "RelativeToolTip": "src\\parser.c",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAK0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:24:53.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "interpreter.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\interpreter.c",
+              "RelativeDocumentMoniker": "src\\interpreter.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\interpreter.c",
+              "RelativeToolTip": "src\\interpreter.c",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T16:24:36.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\main.c",
+              "RelativeDocumentMoniker": "src\\main.c",
+              "ToolTip": "C:\\Users\\admin\\Documents\\autoscript0\\autoscript0\\src\\main.c",
+              "RelativeToolTip": "src\\main.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2026-09-02T14:54:50.919Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

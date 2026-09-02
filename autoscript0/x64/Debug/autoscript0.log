@@ -1,0 +1,12 @@
+﻿  ast.c
+  builtins.c
+  env.c
+  interpreter.c
+  lexer.c
+  main.c
+  parser.c
+  plugin.c
+  value.c
+  正在產生程式碼...
+  autoscript0.vcxproj -> C:\Users\admin\Documents\autoscript0\autoscript0\x64\Debug\autoscript0.exe
+  'pwsh.exe' 不是內部或外部命令、可執行的程式或批次檔。

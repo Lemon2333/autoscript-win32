@@ -1,0 +1,9 @@
+C:\Users\admin\Documents\autoscript0\autoscript0\src\ast.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\ast.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\builtins.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\builtins.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\env.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\env.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\interpreter.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\interpreter.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\lexer.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\lexer.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\main.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\main.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\parser.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\parser.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\plugin.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\plugin.obj
+C:\Users\admin\Documents\autoscript0\autoscript0\src\value.c;C:\Users\admin\Documents\autoscript0\autoscript0\autoscript0\x64\Debug\value.obj
