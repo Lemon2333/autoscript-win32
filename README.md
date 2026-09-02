@@ -40,9 +40,10 @@
 ## 專案結構
 
 ```text
-src/
-include/
-examples/
+project/
+├─ src/
+├─ include/
+└─ examples/
 ```
 ## 建置方式
 使用 Visual Studio 開啟專案並執行，執行時帶入腳本檔案路徑。
