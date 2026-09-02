@@ -26,6 +26,7 @@
     <ClCompile Include="src\lexer.c" />
     <ClCompile Include="src\main.c" />
     <ClCompile Include="src\parser.c" />
+    <ClCompile Include="src\platform_win32.c" />
     <ClCompile Include="src\plugin.c" />
     <ClCompile Include="src\value.c" />
   </ItemGroup>
@@ -39,6 +40,7 @@
     <ClInclude Include="include\interpreter.h" />
     <ClInclude Include="include\lexer.h" />
     <ClInclude Include="include\parser.h" />
+    <ClInclude Include="include\platform_win32.h" />
     <ClInclude Include="include\plugin.h" />
     <ClInclude Include="include\plugin_manager.h" />
     <ClInclude Include="include\plugin_window.h" />

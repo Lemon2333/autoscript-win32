@@ -20,22 +20,44 @@ static Value eval_expr(Expr* expr, Env* env) {
         Value result = value_null();
 
         if (strcmp(expr->as.binary.op, "=") == 0) {
-            if (l.type == VAL_INT && r.type == VAL_INT) {
-                result = value_bool(l.as.i == r.as.i);
+            if (l.type == VALUE_NUMBER && r.type == VALUE_NUMBER) {
+                result = value_bool(l.as.number == r.as.number);
             }
-            else if (l.type == VAL_STRING && r.type == VAL_STRING) {
-                result = value_bool(strcmp(l.as.s, r.as.s) == 0);
+            else if (l.type == VALUE_STRING && r.type == VALUE_STRING) {
+                if (l.as.string != NULL && r.as.string != NULL) {
+                    result = value_bool(strcmp(l.as.string, r.as.string) == 0);
+                }
+                else {
+                    result = value_bool(l.as.string == r.as.string);
+                }
+            }
+            else if (l.type == VALUE_BOOL && r.type == VALUE_BOOL) {
+                result = value_bool(l.as.boolean == r.as.boolean);
+            }
+            else if (l.type == VALUE_NULL && r.type == VALUE_NULL) {
+                result = value_bool(1);
             }
             else {
                 result = value_bool(0);
             }
         }
         else if (strcmp(expr->as.binary.op, "<>") == 0) {
-            if (l.type == VAL_INT && r.type == VAL_INT) {
-                result = value_bool(l.as.i != r.as.i);
+            if (l.type == VALUE_NUMBER && r.type == VALUE_NUMBER) {
+                result = value_bool(l.as.number != r.as.number);
             }
-            else if (l.type == VAL_STRING && r.type == VAL_STRING) {
-                result = value_bool(strcmp(l.as.s, r.as.s) != 0);
+            else if (l.type == VALUE_STRING && r.type == VALUE_STRING) {
+                if (l.as.string != NULL && r.as.string != NULL) {
+                    result = value_bool(strcmp(l.as.string, r.as.string) != 0);
+                }
+                else {
+                    result = value_bool(l.as.string != r.as.string);
+                }
+            }
+            else if (l.type == VALUE_BOOL && r.type == VALUE_BOOL) {
+                result = value_bool(l.as.boolean != r.as.boolean);
+            }
+            else if (l.type == VALUE_NULL && r.type == VALUE_NULL) {
+                result = value_bool(0);
             }
             else {
                 result = value_bool(1);
@@ -49,35 +71,74 @@ static Value eval_expr(Expr* expr, Env* env) {
 
     case EXPR_CALL: {
         int argc = expr->as.call.arg_count;
-        Value* argv = (Value*)calloc(argc, sizeof(Value));
+        Value* argv = (Value*)calloc((size_t)argc, sizeof(Value));
+        if (argv == NULL && argc > 0) {
+            return value_null();
+        }
+
         for (int i = 0; i < argc; i++) {
             argv[i] = eval_expr(expr->as.call.args[i], env);
         }
 
         Value ret = builtin_call(expr->as.call.name, argc, argv);
 
-        for (int i = 0; i < argc; i++) value_free(argv[i]);
+        for (int i = 0; i < argc; i++) {
+            value_free(argv[i]);
+        }
         free(argv);
         return ret;
     }
 
     case EXPR_PLUGIN_CALL: {
         int argc = expr->as.plugin_call.arg_count;
-        Value* argv = (Value*)calloc(argc, sizeof(Value));
+        Value* argv = (Value*)calloc((size_t)argc, sizeof(Value));
+        if (argv == NULL && argc > 0) {
+            return value_null();
+        }
+
         for (int i = 0; i < argc; i++) {
             argv[i] = eval_expr(expr->as.plugin_call.args[i], env);
         }
 
-        Value ret = plugin_call(
-            expr->as.plugin_call.module_name,
-            expr->as.plugin_call.func_name,
-            argc,
-            argv
-        );
+        /*
+            你的 plugin.h 現在是：
+            Value plugin_call(const char* name, Value* args, int argc);
 
-        for (int i = 0; i < argc; i++) value_free(argv[i]);
-        free(argv);
-        return ret;
+            所以把 module + func 組成：
+            "Plugin.Window.Find"
+            "Plugin.Window.Activate"
+        */
+        {
+            char full_name[256];
+            full_name[0] = '\0';
+
+#ifdef _MSC_VER
+            _snprintf_s(
+                full_name,
+                sizeof(full_name),
+                _TRUNCATE,
+                "Plugin.%s.%s",
+                expr->as.plugin_call.module_name,
+                expr->as.plugin_call.func_name
+            );
+#else
+            snprintf(
+                full_name,
+                sizeof(full_name),
+                "Plugin.%s.%s",
+                expr->as.plugin_call.module_name,
+                expr->as.plugin_call.func_name
+            );
+#endif
+
+            Value ret = plugin_call(full_name, argv, argc);
+
+            for (int i = 0; i < argc; i++) {
+                value_free(argv[i]);
+            }
+            free(argv);
+            return ret;
+        }
     }
     }
 

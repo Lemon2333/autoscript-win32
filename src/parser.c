@@ -44,12 +44,22 @@ static Expr** parse_arg_list(Parser* p, int* out_count) {
             Expr* arg = parse_expression(p);
 
             if (count >= cap) {
-                cap = cap ? cap * 2 : 4;
-                args = (Expr**)realloc(args, sizeof(Expr*) * cap);
+                int new_cap = cap ? cap * 2 : 4;
+                Expr** new_args = (Expr**)realloc(args, sizeof(Expr*) * (size_t)new_cap);
+                if (new_args == NULL) {
+                    free(args);
+                    printf("Parse error: out of memory while growing argument list\n");
+                    exit(1);
+                }
+                args = new_args;
+                cap = new_cap;
             }
+
             args[count++] = arg;
 
-            if (!match(p, TOK_COMMA)) break;
+            if (!match(p, TOK_COMMA)) {
+                break;
+            }
         }
     }
 
@@ -60,7 +70,7 @@ static Expr** parse_arg_list(Parser* p, int* out_count) {
 static Expr* parse_primary(Parser* p) {
     Token* t = peek(p);
 
-    if (match(p, TOK_NUMBER)) return new_literal_expr(value_int(t->number));
+    if (match(p, TOK_NUMBER)) return new_literal_expr(value_number(t->number));
     if (match(p, TOK_STRING)) return new_literal_expr(value_string(t->text));
 
     if (match(p, TOK_IDENT)) {
@@ -162,8 +172,10 @@ static Stmt* parse_statement(Parser* p) {
         return new_assign_stmt(name->text, value);
     }
 
-    Expr* expr = parse_expression(p);
-    return new_expr_stmt(expr);
+    {
+        Expr* expr = parse_expression(p);
+        return new_expr_stmt(expr);
+    }
 }
 
 Stmt* parse_program(TokenArray* tokens) {

@@ -45,6 +45,9 @@
     <ClCompile Include="src\value.c">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="src\platform_win32.c">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="examples\demo.as">
@@ -80,6 +83,9 @@
       <Filter>標頭檔</Filter>
     </ClInclude>
     <ClInclude Include="include\value.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="include\platform_win32.h">
       <Filter>標頭檔</Filter>
     </ClInclude>
   </ItemGroup>
